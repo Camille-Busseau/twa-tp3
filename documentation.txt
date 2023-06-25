@@ -1,0 +1,41 @@
+npm install -g @vue/cli
+vue create tp-vue
+    Paramétrage CLI:
+    >Manually select features
+    >Features: Babel + Linter/Formatter + Router
+    >Vue v. 3.0
+    >Mode History
+    >Config Linter/Formatter: ESLint + Standard Config
+    >Lint on save
+    >Config enregistrée dans package.json
+
+//CRÉATION DU SERVEUR LOCAL VUE
+(dans tp-vue) 
+mkdir server, cd server
+npm init
+    Paramétrage du serveur:
+    >package name: (server) server
+    >version: (1.0.0)
+    >description: server with nodejs, express, sequelize, cors, mysql
+    >entry point: (index.js) server.js
+    >test command:
+    >git repository:
+    >keywords: node, express, sequelize, mysql, cors
+    >author:
+    >license: (ISC)
+    >Save in package.sjon
+npm i express sequelize ,mysql2 body-parser cors --save
+//CRÉATION DE LA DB
+(dans MySQL Workbench)
+CREATE DATABASE tp_vue
+----
+    test: node server.js
+
+//CRÉATION DE L'APP FRONTALE VUE
+(dans tp-vue)
+vue create client
+cd client
+npm i bootstrap jquery popper.js (dans mon cas avec --force)
+npm i axios (dans mon cas avec --force)
+    test: npm run serve
+
